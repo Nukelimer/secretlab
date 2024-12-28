@@ -19,7 +19,7 @@
   });
 </script>
 
-<section class="bg-[#BB3338] h-14 flex justify-center items-center overflow-hidden">
+<section class="bg-[#BB3338] h-14 flex justify-center items-center overflow-hidden fixed top-0 w-full z-50">
   {#key currentIndex}
     <p
       class="font-Noto text-white text-center text-lg animate-pulse"

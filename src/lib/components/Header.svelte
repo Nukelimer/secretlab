@@ -9,7 +9,7 @@
   };
 </script>
 
-<div class="flex justify-between py-4">
+<div class="flex justify-between py-4 fixed top-14 bg-white w-full z-50">
   <img src="/logo_secretlab.svg" alt="logo" class="" />
 
   <div class="flex gap-8 mt-0 mr-2 items-center">

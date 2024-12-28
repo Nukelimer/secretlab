@@ -5,7 +5,10 @@
   import Header from "$lib/components/Header.svelte";
 </script>
 
-<SalesBanner />
+<div class="relative top-0">
+
+  <SalesBanner />
 <Header />
+</div>
 
 <slot />

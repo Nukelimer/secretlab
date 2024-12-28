@@ -4,6 +4,7 @@
   import MoveRight from "lucide-svelte/icons/move-right";
 
   let moveforward = false;
+  let moveforward2 = false;
  let hoveredCategoryId = null;
   const categories = [
     { id: crypto.randomUUID(),
@@ -96,4 +97,17 @@
       </a>
     {/each}
   </div>
+
+
+<a href="https://secretlab.co/collections" class="mr-2 my-4">
+<button
+  on:mouseenter={() => (moveforward2 = true)}
+  on:mouseleave={() => (moveforward2 = false)}
+  class="flex justify-center items-center mt-8 uppercase font-Noto font-bold text-white py-2 px-8 rounded-3xl bg-red-700 mx-auto transition-all duration-500"
+>
+  View All Products
+  <MoveRight class={ moveforward2 ? "ml-4  mt-1" : "ml-2 mt-1"} />
+</button>
+</a>
+
 </div>

@@ -108,7 +108,7 @@
 </script>
 
 <div
-  class="flex flex-col justify-center items-center h-[400px] md:h-[700px] relative"
+  class="flex flex-col mt-24 justify-center items-center h-[400px] md:h-[700px] relative"
   on:mount={onMount}
 >
   <video
