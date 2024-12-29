@@ -39,6 +39,7 @@
         src={data.image}
         alt="client {data.image}"
         class="w-80 h-80 object-cover"
+        
         style="flex-shrink: 0;"
       />
     {/each}
