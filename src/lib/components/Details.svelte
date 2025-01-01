@@ -1,8 +1,10 @@
 <script>
   import MoveRight from "lucide-svelte/icons/move-right";
   import CirclePlus from "lucide-svelte/icons/circle-plus";
+    import Button from "$lib/component/reusable/Button.svelte";
   let moveforward = false;
-  let rotateElement = false;
+
+
   const detailsData = [
     {
       title: "Go from work to play and everything in betweens",
@@ -118,7 +120,7 @@
     </div>
   {/each}
 
-  <div
+  <!-- <div
     class=" flex items-center md:justify-center gap-2 font-medium text-[#A72A2F] font-Noto text-2xl mt-8 pb-16 px-2"
     onmouseenter={() => (rotateElement = true)}
     onmouseleave={() => (rotateElement = false)}
@@ -126,13 +128,17 @@
     tabindex="0"
   >
     <p>More Ergonomics</p>
-   <CirclePlus 
-  class={`mt-2 transform transition-transform duration-300 ${
-    rotateElement ? 'rotate-90' : 'rotate-0'
-  }`}
-/>
-
+    <CirclePlus
+      class={`mt-2 transform transition-transform duration-300 ${
+        rotateElement ? "rotate-90" : "rotate-0"
+      }`}
+    />
   </div>
+</div> -->
+</div>
+<div class="mt-8 pb-8 px-2">
+
+  <Button rotateElement={false} text='More Ergonomic' icon='Circle' />
 </div>
 
 <!-- #A72A2F -->

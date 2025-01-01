@@ -37,21 +37,6 @@
   // @ts-ignore
   let progressBars = [];
 
-  // function updateProgress() {
-  //   const videoElement = document.querySelector("video");
-  //   if (videoElement) {
-  //     const progress = (videoElement.currentTime / videoElement.duration) * 100;
-  //     const activeProgressBar = document.querySelector(
-  //       '.progress-bar[data-index="' + currentIndex + '"] .progress-fill',
-  //     );
-  //     if (activeProgressBar) {
-  //       // @ts-ignore
-  //       activeProgressBar.style.width = `${progress}%`;
-  //       // @ts-ignore
-  //       activeProgressBar.style.backgroundColor = `linear-gradient(to right, white ${progress}%, red ${progress}%)`;
-  //     }
-  //   }
-  // }
 
   function updateProgress() {
     const videoElement = document.querySelector("video");

@@ -90,7 +90,7 @@
             <img
               src={category.image}
               alt={category.productCategory}
-              class="w-full h-1/3 md:object-cover md:bg-left-top md:hover:scale-110 hover:transition-all hover:duration-[1000ms] hover:ease-in-out max-h-[40rem] select-none rounded-lg"
+              class="w-full h-1/3 md:object-cover md:bg-left-top md:hover:scale-110 hover:transition-all hover:duration-&lsqb;1000ms&rsqb; hover:ease-in-out max-h-[40rem] select-none rounded-lg"
             />
           </div>
         </div>
