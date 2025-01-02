@@ -16,8 +16,8 @@
 <Categories />
 <Details/>
 <TrustedClients/>
-<ShowCaseAccordion  />
 
+<ShowCaseAccordion/>
 
 
 </div>
