@@ -3,7 +3,8 @@
   import MoveRight from "lucide-svelte/icons/move-right";
   export let rotateElement = false;
    export let text_size = "";
-  export let icon = "";
+  export let styles = "";
+   export let icon = "";
   let moveforward = false;
   export let text = "";
 </script>
@@ -25,7 +26,7 @@
   </div>
 {:else if icon === "MoveRight"}
   <div
-    class="flex flex-col text-center text-[#A72A2F]  {text_size === 'xl' ? 'text-xl': text_size === 'sm' ? 'text-sm mt-1' : 'text-2xl' }"
+    class="flex flex-col {styles} text-center text-[#A72A2F]  {text_size === 'xl' ? 'text-xl': text_size === 'sm' ? 'text-sm mt-1' : 'text-2xl' }"
     role="button"
     tabindex="0"
     onmouseenter={() => (moveforward = true)}

@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Button from "$lib/component/reusable/Button.svelte";
   import * as Accordion from "$lib/component/ui/accordion/index.js";
 
   const accordionData = [
@@ -24,7 +25,7 @@
         "Built to go the distance. Enjoy peace of mind with up to a 5-year Extended Warranty on our ergonomic chairs and standing desks.",
       btnText: "Learn More",
       btnType: "MoveRight",
-      image: "/images/showcase/homepage-engineering-3.png",
+      image: "/images/showcase/support_posture.png",
     },
   ];
 </script>
@@ -36,6 +37,8 @@
       <Accordion.Content>
         <img src={image} alt={heading} class="border mb-6 border-gray-200 rounded" />
         <p class="font-semibold">{content}</p>
+
+         <p class="flex"><Button icon='{btnType}' text="{btnText}" text_size='sm'/></p>
       </Accordion.Content>
     </Accordion.Item>
   {/each}

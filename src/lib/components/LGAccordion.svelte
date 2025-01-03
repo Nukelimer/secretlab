@@ -25,7 +25,7 @@
         "Built to go the distance. Enjoy peace of mind with up to a 5-year Extended Warranty on our ergonomic chairs and standing desks.",
       btnText: "Learn More",
       btnType: "MoveRight",
-      image: "/images/showcase/homepage-engineering-3.png",
+      image: "/images/showcase/support_posture.png.png",
     },
   ];
 
