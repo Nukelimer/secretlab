@@ -238,7 +238,7 @@
     let:Controls
     bind:index
     imgClass="h-full "
-    class="h-full min-h-[600px] lg:min-h-[800px]   relative "
+    class="h-full min-h-[600px]  lg:min-h-[800px]    relative "
     on:change={({ detail }) => {
       console.log(detail);
 
@@ -251,7 +251,7 @@
       target="_blank"
       let:Slide
       let:index
-      class=" relative h-[600px] lg:h-[800px] border-2 w-[100%]"
+      class="  relative h-[600px] lg:h-[800px] border-2 w-[100%]"
     >
       <Slide image={images[index]} class=" " />
 
@@ -333,7 +333,7 @@
   </Carousel>
 </div>
 
-<div class="flex flex-row md:hidden h-[500px] w-full overflow-scroll mt-6">
+<div class="flex flex-row md:!hidden h-[500px] w-full overflow-scroll mt-6">
   {#each images as { alt, logo, sm_src, text, url }}
     <a
       href={url}
