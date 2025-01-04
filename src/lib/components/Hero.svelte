@@ -1,4 +1,7 @@
 <script>
+    import ChevronLeft from "lucide-svelte/icons/chevron-left";
+    import ChevronRight from "lucide-svelte/icons/chevron-right";
+
   // @ts-nocheck
 
   const heroData = [
@@ -108,10 +111,10 @@
   </video>
 
   <div
-    class=" text-white text-center px-4 py-2 md:p-8 absolute w-full bg bottom-0 select-none bg-gradient-to-t to-80% from-black font-Noto h-[40%] flex flex-col"
+    class=" text-white text-center px-4 py-2 md:p-8 absolute w-full bg bottom-0 select-none bg-gradient-to-t to-80% from-black font-Noto h-[45%]  flex flex-col md:hidden   "
   >
     <div
-      class="md:max-w-[60%] -translate-y-9 flex flex-col justify-start items-start"
+      class="md:max-w-[60%] ml-[9%] -translate-y-20 flex flex-col justify-start items-start"
       class:-translate-y-16={heroData[currentIndex].header.includes("NanoGen")}
       class:-translate-x-1={heroData[currentIndex].header.includes("NanoGen")}
     >
@@ -122,7 +125,7 @@
       {/if}
 
       <h1
-        class="text-2xl sm:text-2xl md:text-4xl font-bold mb-4 text-nowrap"
+        class="text-2xl sm:text-2xl md:text-4xl font-bold mb-2 text-nowrap"
         class:text-lg={heroData[currentIndex].header.includes("NanoGen")}
       >
         {heroData[currentIndex].header}
@@ -133,30 +136,47 @@
       </p>
       <a
         href={heroData[currentIndex].btn[1]}
-        class="inline-block bg-slate-50 w-fit text-black font-bold py-2 px-6 items-center rounded-3xl
+        class=" bg-slate-50 w-fit text-black font-bold py-2 px-4 items-center rounded-3xl
           hover:bg-gradient-to-r hover:from-white hover:to-yellow-200
-          transition-all duration-300 cursor-pointer"
+          transition-all duration-300 cursor-pointer flex item-center"
       >
         {heroData[currentIndex].btn[0]}
       </a>
     </div>
   </div>
 
-  <!-- Here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <!-- Here Big Screen -->
   <div
-    class="hidden font-Noto border-[#52525B] border progress-bars lg:flex absolute bottom-3 space-x-2 justify-center w-[80%] py-6 px-4 rounded-3xl bg-[#18181B] z-50 items-center"
+    class="hidden md:flex font-Noto border-[#52525B] border progress-bars lg:flex absolute bottom-3 space-x-2 justify-center w-[80%] py-2 px-4 rounded-3xl bg-[#18181B]  z-50 items-center"
   >
+
+  <ChevronLeft color='#52525B' size='20' class='mr-2'/>
     {#each heroData as item, i}
       <p
         class="h-fit flex flex-col flex-1 overflow-hidden progress-bar"
         data-index={i}
       >
-        <span class="block h-fit bg-[#18181B] text-white"
-          >{item.header.length > 10
-            ? item.header.slice(0, 17) + "..."
-            : item.header}
-          {#if item.header.includes("Nanogen")}
-            <span class="bg-white w-fit text-black font-mono py-2 px-4 rounded">
+        <span class="block h-fit bg-[#18181B] text-[.6em] text-white relative"
+          >{item.header}
+          {#if item.header.includes("NanoGen")}
+            <span class="absolute bg-white w-fit ml-1 text-black font-mono py- px-2 rounded">
               NEW
             </span>
           {/if}
@@ -168,6 +188,8 @@
         {/if}
       </p>
     {/each}
+
+     <ChevronRight color='#52525B' size='20' class='ml-2'/>
   </div>
 
   <div

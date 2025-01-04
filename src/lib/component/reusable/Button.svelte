@@ -3,6 +3,7 @@
   import MoveRight from "lucide-svelte/icons/move-right";
   export let rotateElement = false;
    export let text_size = "";
+  export let text_styles = "";
   export let styles = "";
    export let icon = "";
   let moveforward = false;
@@ -43,12 +44,12 @@
   </div>
 {:else}
   <div
-    class=" flex items-center md:justify-center gap-2 font-medium text-[#A72A2F] font-Noto text-2xl mt-8 pb-16 px-2"
+    class=" flex items-center md:justify-center gap-2 font-medium text-[#A72A2F]   font-Noto text-2xl mt-8 pb-16 px-2"
     onmouseenter={() => (rotateElement = true)}
     onmouseleave={() => (rotateElement = false)}
     role="button"
     tabindex="0"
   >
-    <p>{text}</p>
+    <p class="{text_styles}">{text}</p>
   </div>
 {/if}
