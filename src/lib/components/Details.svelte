@@ -29,10 +29,10 @@
   {#each detailsData as details}
     <div class="flex flex-col items-center justify-center">
       {#if details.image_left}
-        <h3 class="text-center font-Noto text-5xl mt-8 pb-16">
+        <h3 class="text-center font-Noto text-4xl md:text-5xl mt-8 pb-16">
           {details.title}
         </h3>
-        <p class="block text-pretty font-Noto text-lg mt-8 pb-16">
+        <p class="block px-4 text-pretty font-Noto text-lg mt-8 pb-16">
           {details.text}
         </p>
 

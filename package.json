@@ -1,41 +1,47 @@
 {
-	"name": "secretlab",
-	"private": true,
-	"version": "0.0.1",
-	"type": "module",
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"
-	},
-	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.0.0",
-		"@sveltejs/kit": "^2.0.0",
-		"@sveltejs/vite-plugin-svelte": "^4.0.0",
-		"autoprefixer": "^10.4.20",
-		"bits-ui": "^0.22.0",
-		"clsx": "^2.1.1",
-		"embla-carousel-svelte": "^8.5.1",
-		"flowbite": "^2.5.2",
-		"flowbite-svelte": "^0.47.4",
-		"lucide-svelte": "^0.469.0",
-		"postcss": "^8.4.49",
-		"prettier": "^3.4.2",
-		"prettier-plugin-svelte": "^3.3.2",
-		"svelte": "^5.0.0",
-		"svelte-check": "^4.0.0",
-		"tailwind-merge": "^2.6.0",
-		"tailwind-variants": "^0.3.0",
-		"tailwindcss": "^3.4.17",
-		"vite": "^5.4.11"
-	},
-	"dependencies": {
-		"@selemondev/svelte-marquee": "^0.0.2",
-		"embla-carousel-autoplay": "^8.5.1",
-		"svelte-collapsible": "^0.3.1",
-		"svelte-embla": "^0.0.7",
-		"svelte-icons": "^2.1.0"
-	}
+  "name": "secretlab",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^3.0.0",
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "autoprefixer": "^10.4.20",
+    "bits-ui": "^0.22.0",
+    "clsx": "^2.1.1",
+    "embla-carousel-svelte": "^8.5.1",
+    "flowbite": "^2.5.2",
+    "flowbite-svelte": "^0.47.4",
+    "lucide-svelte": "^0.469.0",
+    "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
+    "prettier-plugin-svelte": "^3.3.2",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwind-variants": "^0.3.0",
+    "tailwindcss": "^3.4.17",
+    "vite": "^5.4.11"
+  },
+  "dependencies": {
+    "@selemondev/svelte-marquee": "^0.0.2",
+    "embla-carousel-autoplay": "^8.5.1",
+    "svelte-carousel": "^1.0.25",
+    "svelte-collapsible": "^0.3.1",
+    "svelte-embla": "^0.0.7",
+    "svelte-icons": "^2.1.0"
+  },
+  "exports": {
+    ".": {
+      "svelte": "./dist/index.js"
+    }
+  }
 }

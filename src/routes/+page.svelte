@@ -1,45 +1,25 @@
 <script>
   import Categories from "$lib/components/Categories.svelte";
-    import Details from "$lib/components/Details.svelte";
+  import Details from "$lib/components/Details.svelte";
   import Hero from "$lib/components/Hero.svelte";
   import HeroReview from "$lib/components/HeroReview.svelte";
-    import InspiredByOurCommunity from "$lib/components/InspiredByOurCommunity.svelte";
-    import ShowCaseAccordion from "$lib/components/ShowCase_Accordion.svelte";
-    import ShowOffWhoYouAre from "$lib/components/ShowOffWhoYouAre.svelte";
-    import TrustedClients from "$lib/components/TrustedClients.svelte";
-
-     
+  import InspiredByOurCommunity from "$lib/components/InspiredByOurCommunity.svelte";
+    import ProductShowCase from "$lib/components/ProductShowCase.svelte";
+  import ShowCaseAccordion from "$lib/components/ShowCase_Accordion.svelte";
+  import ShowOffWhoYouAre from "$lib/components/ShowOffWhoYouAre.svelte";
+  import TrustedClients from "$lib/components/TrustedClients.svelte";
+  import Products from "$lib/components/Products.svelte";
 </script>
 
-
 <div class="">
-  
-  
   <Hero />
   <HeroReview />
   <Categories />
-  <Details/>
- 
-<TrustedClients/>
-
-
-<ShowCaseAccordion/>
-<ShowOffWhoYouAre/>
-
-<InspiredByOurCommunity/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <Details />
+  <TrustedClients />
+  <ShowCaseAccordion />
+  <ShowOffWhoYouAre />
+  <InspiredByOurCommunity />
+  <ProductShowCase/>
+  <Products/>
 </div>
