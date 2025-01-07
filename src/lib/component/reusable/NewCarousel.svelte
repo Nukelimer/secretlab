@@ -43,15 +43,16 @@
     isClient = true;
   });
 </script>
+ <!-- let:showPrevPage
+      let:showNextPage
+      let:currentPageIndex
+      let:pagesCount
+      let:showPage -->
 
 <div class=" md:hidden cursor-pointer select-none  ">
   {#if isClient}
     <Carousel
-      let:showPrevPage
-      let:showNextPage
-      let:currentPageIndex
-      let:pagesCount
-      let:showPage
+     
     >
       <div slot="prev" class=""></div>
      {#each differencesData as data, index}

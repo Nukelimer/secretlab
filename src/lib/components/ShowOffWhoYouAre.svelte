@@ -240,7 +240,7 @@
     imgClass="h-full "
     class="h-full min-h-[600px]  lg:min-h-[800px]    relative "
     on:change={({ detail }) => {
-      console.log(detail);
+ 
 
       image = detail;
     }}
