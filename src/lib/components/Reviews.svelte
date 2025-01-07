@@ -5,13 +5,14 @@
   import Swiper from "swiper";
   import "swiper/swiper-bundle.css";
   import Card from "./Card.svelte";
-   import { browser } from "$app/environment";
-
-    let isLargeScreen = false;
+  
   let swiper = null;
   let active_Index = 0;
-
+  
+  
  
+   import { browser } from "$app/environment";
+   let isLargeScreen = false;
 
     if (browser) {
     const updateScreenSize = () => {
@@ -20,6 +21,10 @@
     window.addEventListener("resize", updateScreenSize);
     updateScreenSize();
   }
+  let numbers= isLargeScreen ? 4 : 1;
+
+
+
   const cards = [
     {
       img: "/images/review/one-of-the-best.png",
@@ -221,7 +226,7 @@
 
   const randomCards = stripCards(cards);
 
-  let numbers= isLargeScreen ? 3 : 1;
+
   console.log(numbers);
 
 

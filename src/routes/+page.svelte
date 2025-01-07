@@ -10,6 +10,8 @@
   import TrustedClients from "$lib/components/TrustedClients.svelte";
   import Products from "$lib/components/Products.svelte";
     import Reviews from "$lib/components/Reviews.svelte";
+    import ProductPerks from "$lib/components/Product_Perks.svelte";
+    import ContactUs from "$lib/components/ContactUs.svelte";
 </script>
 
 <div class="">
@@ -23,4 +25,6 @@
   <InspiredByOurCommunity />
   <Products/>
   <Reviews/>
+  <ProductPerks/>
+  <ContactUs/>
 </div>

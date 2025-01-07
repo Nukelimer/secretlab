@@ -1,8 +1,11 @@
 <script>
   export let categoryName = "";
    export let text = "";
-  // @ts-ignore
-  export let categoryData = [];
+
+  /**
+     * @type {string | any[]}
+     */
+   export let categoryData = [];
 
 
   import Button from "./Button.svelte";
@@ -15,7 +18,8 @@
     {categoryName}
   </h1>
 
-  <div class="mx-6 md:hidden">
+  <div class="mx-6 lg:hidden">
+   {#if categoryData.length > 0}
     {#each categoryData as data}
       <div class="bg-[#F2F2F2] rounded-sm my-4 pt-12 px-6">
         <div class="">
@@ -50,15 +54,15 @@
           class="mx-auto flex justify-center item-center"
         />
         {#if data.banner}
-          <div class="max-w-[520px] mt-8 pb-4">
+          <div class=" mt-8 pb-4">
             <img
               src={data.banner.img_lg}
               alt=""
               class="mx-auto max-h-[200p x] w-full flex justify-center item-center object-cover bg-top hiddec n rounded-t-sm"
             />
-            <div class="bg-[#1E232D] text-white pl-8 pb-6 !mb-6 rounded-b-sm">
+            <div class="bg-[#1E232D] text-white pl-8 pb-6 !mb-6 rounded-b-sm pt-4">
               <p
-                class="uppercase font-bold text-black bg-white rounded text-xs p-1 w-fit"
+                class="uppercase font-bold text-black bg-white rounded text-xs p-1 w-fit "
               >
                 {data.banner.status}
               </p>
@@ -74,10 +78,13 @@
         {/if}
       </div>
     {/each}
+    
+   {/if}
   </div>
 
-  <div class="mx-6 hidden md:flex flex-wrap items-start justify-center gap-4">
-    {#each categoryData as data, idx}
+  <div class="mx-6 hidden  lg:flex flex-wrap items-start justify-center gap-4">
+    {#if categoryData.length > 0}
+      {#each categoryData as data, idx}
       {#if idx === 0}
         <div class="w-screen rounded-md bg-[#F2F2F2]">
           <div class="flex items-center justify-around mt-7">
@@ -116,7 +123,7 @@
               </div>
 
               {#if data.banner}
-                <div class="max-w-[520px] flex mt-8 pb-4">
+                <div class="max-w-[520px] j flex mt-8 pb-4">
                   <img
                     src={data.banner.img}
                     alt=""
@@ -178,7 +185,7 @@
             </div>
 
             {#if data.banner}
-              <div class="max-w-[520px] flex mt-8 pb-4">
+              <div class="max-w-[520px]  flex mt-8 pb-4">
                 <img
                   src={data.banner.img}
                   alt=""
@@ -204,6 +211,7 @@
         </div>
       {/if}
     {/each}
+    {/if}
     <Button {text} icon="MoveRight" styles={" text-sm uppercase font-semibold"}/>
   </div>
 

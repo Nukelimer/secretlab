@@ -2,7 +2,7 @@
   export let card;
   export let index;
 import { CircleCheck } from 'lucide-svelte';
-
+  console.log(index);
 
 
   // @ts-ignore
