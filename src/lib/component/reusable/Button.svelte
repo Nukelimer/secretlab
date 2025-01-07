@@ -27,7 +27,7 @@
   </div>
 {:else if icon === "MoveRight"}
   <div
-    class="flex flex-col {styles} text-center text-[#A72A2F]  {text_size === 'xl' ? 'text-xl': text_size === 'sm' ? 'text-sm mt-1' : 'text-2xl' }"
+    class="flex flex-col  {styles} text-center text-[#A72A2F]  {text_size === 'xl' ? 'text-xl': text_size === 'sm' ? 'text-sm mt-1' : 'text-2xl' }"
     role="button"
     tabindex="0"
     onmouseenter={() => (moveforward = true)}

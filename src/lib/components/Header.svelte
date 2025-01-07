@@ -10,7 +10,7 @@
 </script>
 
 <div class="flex justify-between py-4 fixed top-14 bg-white w-full z-50 border-b-black/50 border">
-  <img src="/logo_secretlab.svg" alt="logo" class="" />
+  <img src="/logo_secretlab.png" alt="logo" class="flex h-fit ml-4 w-fit" />
 
   <div class="flex gap-8 mt-0 mr-2 items-center">
     <div class="h-10 w-10">

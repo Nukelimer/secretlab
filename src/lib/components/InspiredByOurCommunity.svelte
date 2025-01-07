@@ -110,7 +110,7 @@ import  NewCarousel  from "$lib/component/reusable/NewCarousel.svelte";
     <img
       src="/images/inspired/bg-esports.png"
       alt="es-sport"
-      class="max-h-[600px] h-[40vh]"
+      class="max-h-[600px] h-[40vh] w-full"
     />
 
     <div
