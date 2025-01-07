@@ -26,8 +26,6 @@
 
    import { Marquee as FlowBiteMarquee} from 'flowbite-svelte'
 
-  import Autoplay from "embla-carousel-autoplay";
-
  
   const reviews = [
     {
