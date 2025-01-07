@@ -6,7 +6,7 @@
 </script>
 
 
-<div class="relative top-0">
+<div class="relative top-0 z-50">
 
   <SalesBanner />
 <Header />

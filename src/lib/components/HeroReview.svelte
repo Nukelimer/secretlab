@@ -4,6 +4,17 @@
   import * as Carousel from "$lib/component/ui/carousel/index.js";
 
   import Star from "lucide-svelte/icons/star";
+    import { browser } from "$app/environment";
+
+    let isLargeScreen = false;
+
+      if (browser) {
+    const updateScreenSize = () => {
+      isLargeScreen = window.innerWidth >= 1024;
+    };
+    window.addEventListener("resize", updateScreenSize);
+    updateScreenSize();
+  }
 
   const plugin = Autoplay({ delay: 2000, stopOnInteraction: true });
 
@@ -81,30 +92,10 @@
     > 9,682 reviews on Trustpilot
   </p>
 
-  <div class="flex items-center justify-center">
-    {#each reviews as review}
-     <div
-  class="hidden md:flex flex-col items-center justify-center text-center h-full"
->
-  <p class="flex flex-col h-full min-h-[305px] items-center justify-center p-6">
-    <img src={review.logo} alt="company logo" class="max-h-16 mb-4" />
-    <a href={review.url} target="_blank" class="flex flex-col items-center">
-      <span class="text-[#D2BD78] uppercase font-bold my-4 block">
-        {review.type}
-      </span>
-      <span
-        class="text-sm font-semibold text-white before:content-['“'] after:content-['”']"
-      >
-        {review.review}
-      </span>
-    </a>
-  </p>
-</div>
 
-    {/each}
-  </div>
 
-  <div class="flex justify-center items-center w-full md:hidden mx-auto relative  ">
+  {#if !isLargeScreen}
+ <div class=" flex justify-center md:hidden items-center w-full  mx-auto relative  ">
     <Carousel.Root
       plugins={[plugin]}
       class="  w-full flex  justify-center items-center max-w-[60%] "
@@ -142,4 +133,31 @@
       <Carousel.Next />
     </Carousel.Root>
   </div>
+  {:else}
+  <div class="hidden md:flex items-center   justify-center">
+    {#each reviews as review}
+     <div
+  class="hidden md:flex flex-col items-center justify-center text-center h-full"
+>
+  <p class="flex flex-col h-full min-h-[305px] items-center justify-center p-6">
+    <img src={review.logo} alt="company logo" class="max-h-16 mb-4" />
+    <a href={review.url} target="_blank" class="flex flex-col items-center">
+      <span class="text-[#D2BD78] uppercase font-bold my-4 block">
+        {review.type}
+      </span>
+      <span
+        class="text-sm font-semibold text-white before:content-['“'] after:content-['”']"
+      >
+        {review.review}
+      </span>
+    </a>
+  </p>
+</div>
+
+    {/each}
+  </div>
+ 
+  {/if}
+
+ 
 </div>

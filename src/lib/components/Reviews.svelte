@@ -236,7 +236,7 @@
 
 <div class="relative my-16">
   <div
-    class="absolute top-0 bottom-0 left-0 w-32 md:w-64 bg-gradient-to-r from-white to-transparent pointer-events-none z-10"
+    class="absolute top-0 bottom-0 left-0 w-10 md:w-64 bg-gradient-to-r from-white to-transparent pointer-events-none z-10"
   ></div>
   <div class="swiper-container w-full pt -5">
     <div class="swiper-wrapper cursor-pointer">
@@ -246,7 +246,7 @@
     </div>
   </div>
   <div
-    class="absolute top-0 bottom-0 right-0 w-32 md:w-80 bg-gradient-to-l from-white to-transparent pointer-events-none z-10"
+    class="absolute top-0 bottom-0 right-0 w-10 md:w-80 bg-gradient-to-l from-white to-transparent pointer-events-none z-10"
   ></div>
 
   <div class="indicators flex justify-center items-center mt-5 gap-2">

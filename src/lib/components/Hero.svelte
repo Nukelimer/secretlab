@@ -45,6 +45,7 @@
     const videoElement = document.querySelector("video");
     if (videoElement) {
       const progress = (videoElement.currentTime / videoElement.duration) * 100;
+      // @ts-ignore
       const allProgressBars = document.querySelectorAll(
         ".progress-bar .progress-fill",
       );
@@ -52,6 +53,7 @@
         `.progress-bar[data-index="${currentIndex}"] .progress-fill`,
       );
       if (activeProgressBar) {
+        // @ts-ignore
         activeProgressBar.style.width = `${progress}%`;
       }
     }
@@ -63,6 +65,7 @@
     const videoElement = document.querySelector("video");
     if (videoElement) {
       const progress = (videoElement.currentTime / videoElement.duration) * 100;
+      // @ts-ignore
       const allProgressBars = document.querySelectorAll(
         ".progress-bar2 .progress-fill2",
       );
@@ -71,7 +74,9 @@
         `.progress-bar2[data-index="${currentIndex}"] .progress-fill2`,
       );
       if (activeProgressBar) {
+        // @ts-ignore
         activeProgressBar.style.width = `${progress}%`;
+        // @ts-ignore
         activeProgressBar.style.backgroundColor = `linear-gradient(to right, white ${progress}%, red ${progress}%)`;
       }
     }
@@ -96,7 +101,7 @@
 </script>
 
 <div
-  class="flex flex-col mt-24 justify-center items-center h-[400px] md:h-[700px] relative"
+  class="flex flex-col mt-24 justify-center items-center h-[400px] md:h-[800px] md:min-h-[750px] relative"
   on:mount={onMount}
 >
   <video
@@ -164,7 +169,7 @@
 
   <!-- Here Big Screen -->
   <div
-    class="hidden md:flex font-Noto border-[#52525B] border progress-bars lg:flex absolute bottom-3 space-x-2 justify-center w-[80%] py-2 px-4 rounded-3xl bg-[#18181B]  z-50 items-center"
+    class="hidden md:flex font-Noto border-[#52525B] border progress-bars lg:flex absolute bottom-3 space-x-2 justify-center w-[80%] py-2 px-4 rounded-3xl bg-[#18181B]  z-20 items-center"
   >
 
   <ChevronLeft color='#52525B' size='20' class='mr-2'/>

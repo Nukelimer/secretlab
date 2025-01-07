@@ -16,11 +16,11 @@
   };
 </script>
 
-<div class="card font-Noto swiper-slide text-center w-fit max-w-[300px] h-[350px] min-h-[350px] max -h-[350px] rounded-b shadow-lg mx-4">
+<div class="card font-Noto !w-[400px] swiper-slide text-center max-h-[430px] min-h-[400px]  md:max-w-[300px] md:h-[350px] md:min-h-[350px]  rounded-b shadow-lg">
   <img 
     src="{card.img}" 
     alt="{card.title}" 
-    class="max-h-32  w-full object-cover aspect-square rounded-t" 
+    class="max-h-36  w-full object-cover aspect-square rounded-t" 
   />
   <h3 class="text-pretty text-left font-bold my-3 text-base mr-12">
     "{card.title}"
