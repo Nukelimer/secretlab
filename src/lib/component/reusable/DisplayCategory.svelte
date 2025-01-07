@@ -1,6 +1,7 @@
 <script>
   export let categoryName = "";
    export let text = "";
+  // @ts-ignore
   export let categoryData = [];
 
 

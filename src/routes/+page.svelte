@@ -9,6 +9,7 @@
   import ShowOffWhoYouAre from "$lib/components/ShowOffWhoYouAre.svelte";
   import TrustedClients from "$lib/components/TrustedClients.svelte";
   import Products from "$lib/components/Products.svelte";
+    import Reviews from "$lib/components/Reviews.svelte";
 </script>
 
 <div class="">
@@ -20,6 +21,6 @@
   <ShowCaseAccordion />
   <ShowOffWhoYouAre />
   <InspiredByOurCommunity />
-
   <Products/>
+  <Reviews/>
 </div>

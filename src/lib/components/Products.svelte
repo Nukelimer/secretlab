@@ -89,9 +89,18 @@
   ];
 </script>
 
-<DisplayCategory categoryName={"Secretlab Chairs"}    text={'Shop All Ergonomic Chairs'} categoryData={chairs} />
-<DisplayCategory categoryName={"Secretlab Desks"}   text={'Shop All Desk'} categoryData={desks} />
-<DisplayCategory   text={'Shop All  Accessories'}
+<DisplayCategory
+  categoryName={"Secretlab Chairs"}
+  text={"Shop All Ergonomic Chairs"}
+  categoryData={chairs}
+/>
+<DisplayCategory
+  categoryName={"Secretlab Desks"}
+  text={"Shop All Desk"}
+  categoryData={desks}
+/>
+<DisplayCategory
+  text={"Shop All  Accessories"}
   categoryName={"Secretlab Accessories"}
   categoryData={accessories}
 />
