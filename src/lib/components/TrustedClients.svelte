@@ -22,11 +22,10 @@
   import * as Card from "../component/ui/carousel/index";
 
   import * as Carousel from "$lib/component/ui/carousel/index.js";
- 
 
-   import { Marquee as FlowBiteMarquee} from 'flowbite-svelte'
+  import { Marquee as FlowBiteMarquee } from "flowbite-svelte";
+  import Marquee from "svelte-fast-marquee";
 
- 
   const reviews = [
     {
       profile_image: "./images/trusted/avatar/hanszimmer.png",
@@ -44,7 +43,7 @@
       name: "Lee ‘Faker’ Sang-hyeok",
       bio: "T1 | 5x League of Legends Worlds champion",
     },
-    
+
     {
       profile_image: "./images/trusted/avatar/deadmau5.png",
       review:
@@ -74,34 +73,23 @@
   ];
 </script>
 
-<div class=" bg-[#27272A] ">
-  <h2 class="text-center pt-8 pb-4 text-3xl text-white ">
+<div class=" bg-[#27272A]">
+  <h2 class="text-center pt-8 pb-4 text-3xl text-white">
     Trusted by the best in the business
   </h2>
- 
 
-
-
-
-
-  <FlowBiteMarquee  class="pt-16 cursor-pointer" speed={0.3} hoverSpeed={0.1}>
-   {#each [...trustedClientData, ...trustedClientData] as data, index}
-      <img
-        src={data.image}
-        alt="client {data.image}"
-        class="w-80 h-80 object-cover"
-        style="flex-shrink: 0;"
-      />
+  <Marquee speed={50}>
+    {#each trustedClientData as data, index}
+      <img src={data.image} alt={data.image} class="w-80 h-80" />
     {/each}
-</FlowBiteMarquee>
+  </Marquee>
+
   <div class="">
     <div
-      class="flex justify-center items-center max-h-[600px] w-full  mx-auto relative"
+      class="flex justify-center items-center max-h-[600px] w-full mx-auto relative"
     >
       <Carousel.Root
-     
         class="  w-full flex  justify-center items-center max-w-[60%] "
-    
         opts={{ loop: true }}
       >
         <Carousel.Content class="p-1 ">
@@ -124,15 +112,11 @@
                         class="rounded-full h-20 w-20"
                       />
 
-                      <p
-                        class="text-sm text-white text-center mt-2"
-                      >
+                      <p class="text-sm text-white text-center mt-2">
                         {review?.name}lll
                       </p>
 
-                       <p
-                        class="text-sm text-[#8a8484] text-center mt-2"
-                      >
+                      <p class="text-sm text-[#8a8484] text-center mt-2">
                         {review?.bio}
                       </p>
                     </Card.Content>
@@ -141,18 +125,18 @@
               </Carousel.Item>
             {:else}
               <Carousel.Item>
-                <div class="w-full ">
+                <div class="w-full">
                   <Card.Root class="">
                     <Card.Content
                       class="flex flex-col aspect-square items-center justify-center p-6  font-Noto"
                     >
                       <p
-                        class="text-[#fff] text-center  text-sm md:text-xl my-4 review-before review-after "
+                        class="text-[#fff] text-center text-sm md:text-xl my-4 review-before review-after"
                         data-review={`"${review.review}`}
-                        data-end-review={`${review.end_review ? review.end_review: ''}"`}
+                        data-end-review={`${review.end_review ? review.end_review : ""}"`}
                       >
                         {""}
-                        {review?.sub_review} 
+                        {review?.sub_review}
                         {""}
                       </p>
 
@@ -191,15 +175,13 @@
   .review-before::before {
     content: attr(data-review);
     color: #8a8484;
-
   }
 
   .review-after::after {
     content: attr(data-end-review);
     color: #8a8484;
   }
-  .font-overide{
-    
+  .font-overide {
     font-size: 1.3em;
   }
 </style>
