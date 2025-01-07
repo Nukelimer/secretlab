@@ -22,9 +22,9 @@
   import * as Card from "../component/ui/carousel/index";
 
   import * as Carousel from "$lib/component/ui/carousel/index.js";
-  const plugin = Autoplay({ delay: 2000, stopOnInteraction: true });
-  import { Marquee } from "@selemondev/svelte-marquee";
-  import "@selemondev/svelte-marquee/dist/style.css";
+ 
+
+   import { Marquee as FlowBiteMarquee} from 'flowbite-svelte'
 
   import Autoplay from "embla-carousel-autoplay";
 
@@ -80,12 +80,14 @@
   <h2 class="text-center pt-8 pb-4 text-3xl text-white ">
     Trusted by the best in the business
   </h2>
-  <Marquee
-    Marquee
-    class="py-4 motion-reduce:overflow-auto [--duration:60s]"
-    innerClassName="motion-reduce:animate-none motion-reduce:first:hidden"
-  >
-    {#each [...trustedClientData, ...trustedClientData] as data, index}
+ 
+
+
+
+
+
+  <FlowBiteMarquee  class="pt-16 cursor-pointer" speed={0.3} hoverSpeed={0.1}>
+   {#each [...trustedClientData, ...trustedClientData] as data, index}
       <img
         src={data.image}
         alt="client {data.image}"
@@ -93,8 +95,7 @@
         style="flex-shrink: 0;"
       />
     {/each}
-  </Marquee>
-
+</FlowBiteMarquee>
   <div class="">
     <div
       class="flex justify-center items-center max-h-[600px] w-full  mx-auto relative"
@@ -115,7 +116,7 @@
                       class="flex flex-col aspect-square items-center justify-center p-6 font-Noto "
                     >
                       <p
-                        class="text-[#8a8484] text-center text-sm md:text-xl before:content-['”'] after:content-['”']"
+                        class="text-[#8a8484] text-center text-sm !md:text-2xl before:content-['”'] after:content-['”']"
                       >
                         {review?.review}
                       </p>
@@ -145,15 +146,15 @@
                 <div class="w-full ">
                   <Card.Root class="">
                     <Card.Content
-                      class="flex flex-col aspect-square items-center justify-center p-6 font-Noto"
+                      class="flex flex-col aspect-square items-center justify-center p-6  font-Noto"
                     >
                       <p
-                        class="text-[#fff] text-center text-sm md:text-xl my-4 review-before review-after"
+                        class="text-[#fff] text-center  text-sm md:text-xl my-4 review-before review-after "
                         data-review={`"${review.review}`}
                         data-end-review={`${review.end_review ? review.end_review: ''}"`}
                       >
                         {""}
-                        {review?.sub_review}
+                        {review?.sub_review} 
                         {""}
                       </p>
 
@@ -192,10 +193,15 @@
   .review-before::before {
     content: attr(data-review);
     color: #8a8484;
+
   }
 
   .review-after::after {
     content: attr(data-end-review);
     color: #8a8484;
+  }
+  .font-overide{
+    
+    font-size: 1.3em;
   }
 </style>

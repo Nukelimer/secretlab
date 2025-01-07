@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     import ChevronLeft from "lucide-svelte/icons/chevron-left";
     import ChevronRight from "lucide-svelte/icons/chevron-right";
 

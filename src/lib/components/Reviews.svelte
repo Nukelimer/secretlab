@@ -12,7 +12,7 @@
   const cards = [
     {
       img: "/images/review/one-of-the-best.png",
-      id: 1,
+      id: crypto.randomUUID(),
       title: "One of my best purchase ever",
       description:
         "This product is amazing. Packaging is of high-quality, the materials are of high-quality too. I don't recall having back problems anymore eversince using this product. Highly recommended.",
@@ -23,7 +23,7 @@
 
     {
       img: "/images/review/excellent-chair.png",
-      id: 2,
+      id: crypto.randomUUID(),
       title: "Excellent chair really helping with my bad back",
       description:
         "I am super happy with my purchase. I was upgrading from a high end gaming chair without adjustable lumbar support. This new Secretlab chair has helpled loads with this. Used for work all day and then a few hours or gaming each evening. Love the magnetic cushion too.",
@@ -33,7 +33,7 @@
     },
     {
       img: "/images/review/the-best.png",
-      id: 3,
+      id: crypto.randomUUID(),
       title: "The best!",
       description:
         'At the beginning I was a little hesitant and skietic about spending so much for a "gaming" chair. But after almost a month I can say that it was a good investment, thanks also to the lumbar support, it is possible to spend hours and hours maintaining an ergonomic position that does not create back pain. Plus the magnetic pillow is an excellent extra and very very comfortable. The quality of the materials is very good and you can see the quality of the brand in every well-groomed and finished detail.',
@@ -43,7 +43,7 @@
     },
     {
       img: "/images/review/first-ever.png",
-      id: 4,
+      id: crypto.randomUUID(),
       title: "First ever Gaming Chair",
       description:
         "Been reading and watching reviews on Secretlab Chair. Waited the right time to get the latest version and it paid off! Loving the chair while working and when playing :)",
@@ -53,7 +53,7 @@
     },
     {
       img: "/images/review/secret-lab-titan.png",
-      id: 5,
+      id: crypto.randomUUID(),
       title: "Secretlab TITAN Evo [small] Chair",
       description:
         "I love this seat, the compression of the head pillow is amazing and it is already helping fix my posture.",
@@ -63,7 +63,7 @@
     },
     {
       img: "/images/review/so-solid.png",
-      id: 6,
+      id: crypto.randomUUID(),
       title: "So solid. I approve.",
       description:
         "A solid built chair that I really enjoy using. Everything just feels very premium, not to mention the usage of sexy magnets on the pillow and the arm rests. My most beloved feature is the 165-degree recline, perfect for that quick snooze after lunch!",
@@ -73,7 +73,7 @@
     },
     {
       img: "/images/review/ex-last.png",
-      id: 7,
+      id: crypto.randomUUID(),
       title: "Excellent chair!",
       description:
         "It is the best chair I have ever sit on it. It is what you expect from a 500$ chair.",
@@ -83,7 +83,7 @@
     },
     {
       img: "/images/review/stealth-home.png",
-      id: 8,
+      id: crypto.randomUUID(),
       title: "Stealth home office",
       description:
         "Fantastic table and chair. Blown away by the attention to detail and craftsmanship.",
@@ -93,7 +93,7 @@
     },
     {
       img: "/images/review/hq-chair.png",
-      id: 9,
+      id: crypto.randomUUID(),
       title: "High quality chair",
       description:
         "I already had a gamer chair, AKRACING and the coating was pealing, along with the padding basically shot, it was an decent chair. I got the Secretlab as reviews said it was great, once I got mine and unboxed it, I was shocked at the quality of packaging it came in, along side what was a high quality chair, I have the fabric version as its hot in my area, and the material is VERY thick and strong, minor details everywhere and the lumber support is VERY good, I used a lumber pillow on my old chair, this chair doesn't need a lumbar pillow, inbuilt adjustments I have it set perfect! the top pillow is magnetic! These chairs cost a lot and I was worried it was all because of the big name, NO this chair is QUALITY.",
@@ -103,7 +103,7 @@
     },
     {
       img: "/images/review/b-c-had.png",
-      id: 10,
+      id: crypto.randomUUID(),
       title: "Best chair I've Had",
       description:
         "This is chair is very comfortable and easy to build and use. I love the magnetic cushion for my head.",
@@ -113,7 +113,7 @@
     },
     {
       img: "/images/review/B-C-Rachel.png",
-      id: 11,
+      id: crypto.randomUUID(),
       title: "Best chair ever",
       description:
         "After many months of contemplation, I’ve finally thrown in the towel and went ahead to purchase my very first gaming chair - Secretlab Titan Evo 2022. This chair has helped me a lot in my sitting posture with its built in lumbar support and its flexibility to adjust the backrest. Best investment ever and my only regret was not purchasing it earlier.",
@@ -123,7 +123,7 @@
     },
     {
       img: "/images/review/origfinal-Titan.png",
-      id: 12,
+      id: crypto.randomUUID(),
       title: "Original TITAN XL to TITAN Evo",
       description:
         "Had the original Titan XL and was hesitant at first to upgrade to the 2022 version but I'm so glad I did. The leather seems softer than the original model (never had the 2020 model so I'm not sure with that one). The arm rests are also much more comfortable than the original. The lumbar system is definitely much better. The magnetic head pillow is a game changer than the original. Overall, everything seems and feels more refined. It's like upgrading an already great product to an even better product. It's definitely a step to the right direction. Thank you Secretlab!",
@@ -133,7 +133,7 @@
     },
     {
       img: "/images/review/g-g-c.png",
-      id: 13,
+      id: crypto.randomUUID(),
       title: "Great gaming chair",
       description:
         "Overall this is been an excellent purchase. My previous chair was about 6 years old now and thought it was time to upgrade, so i took the plunge and went with Secretlab and their Titan Evo 2022 model.",
@@ -143,7 +143,7 @@
     },
     {
       img: "/images/review/a-c-4-dad.png",
-      id: 14,
+      id: crypto.randomUUID(),
       title: "Awesome Chair for Dads!",
       description:
         "Overall this is been an excellent purchase. My previous chair was about 6 years old now and thought it was time to upgrade, so i took the plunge and went with Secretlab and their Titan Evo 2022 model.",
@@ -153,7 +153,7 @@
     },
     {
       img: "/images/review/comfortable.png",
-      id: 15,
+      id: crypto.randomUUID(),
       title: "Comfortable!",
       description:
         "I love the built-in lumbar support feature - haven't had any back pain since I started using the Titan Evo! And it doesn't hurt that it comes in a lovely mint green color to match my PC case :3",
@@ -163,7 +163,7 @@
     },
     {
       img: "/images/review/t-a-c.png",
-      id: 16,
+      id: crypto.randomUUID(),
       title: "Truly Amazing Chair",
       description:
         "For the amount of hours I spend sitting being a gamer, although the chair is expensive it is 100% worth it. It is much more sturdy and well constructed than my previous DXRacer, easy to build and very comfortable to use. 10/10.",
@@ -173,7 +173,7 @@
     },
     {
       img: "/images/review/softweave.png",
-      id: 17,
+      id: crypto.randomUUID(),
       title:
         "Secretlab TITAN Evo - Regular - Secretlab SoftWeave™ Plus Fabric",
       description:
@@ -185,7 +185,7 @@
 
     {
       img: "/images/review/the-best-18.png",
-      id: 18,
+      id: crypto.randomUUID(),
       title: "The Best!",
       description:
         "Bought this chair after my partner purchased his and both of us were in amazement at how good this chair actually is. Very comfortable and soft and definitely worth every penny that I paid.",
